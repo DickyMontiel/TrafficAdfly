@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tech.easyprojects.controllers.IndexController">
+    <children>
+      <AnchorPane layoutX="1.0" layoutY="3.0" prefHeight="82.0" prefWidth="1366.0" style="-fx-background-color: #32e0c4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="82.0" fitWidth="117.0" layoutX="35.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../images/icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="56.0" layoutX="1296.0" layoutY="17.0" onMouseClicked="#telegramChannel" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../images/telegram.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextArea disable="true" layoutX="32.0" layoutY="167.0" prefHeight="434.0" prefWidth="261.0" />
+      <Label layoutX="96.0" layoutY="118.0" text="User Agents" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TextArea disable="true" layoutX="374.0" layoutY="167.0" prefHeight="434.0" prefWidth="261.0" />
+      <Label layoutX="468.0" layoutY="118.0" text="Proxys" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="772.0" layoutY="118.0" text="Adfly Link" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="991.0" layoutY="84.0" orientation="VERTICAL" prefHeight="618.0" prefWidth="5.0" />
+      <TextField fx:id="txtThreads" layoutX="1020.0" layoutY="151.0" prefHeight="25.0" prefWidth="319.0" text="1" />
+      <Label layoutX="1019.0" layoutY="105.0" text="Procesos por segundo:" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="1105.0" layoutY="443.0" mnemonicParsing="false" onAction="#initTraffic" prefHeight="48.0" prefWidth="161.0" text="Iniciar">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="1105.0" layoutY="518.0" mnemonicParsing="false" onAction="#stopThreads" prefHeight="48.0" prefWidth="161.0" text="Parar">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="txtCiclos" layoutX="1105.0" layoutY="661.0" text="0" textFill="#58f258" textOverrun="CLIP">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLink" layoutX="662.0" layoutY="164.0" prefHeight="25.0" prefWidth="319.0" />
+      <TextField fx:id="txtSegundos" layoutX="1020.0" layoutY="243.0" prefHeight="25.0" prefWidth="319.0" text="30" />
+      <Label layoutX="1021.0" layoutY="202.0" text="Segundos por links:" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="1019.0" layoutY="661.0" text="Visitas:" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
